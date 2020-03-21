@@ -26,6 +26,7 @@ class ArmstrongNumber {
 		while(temp != 0) {
 			digit = temp % 10;
 			resultNum += Math.pow(digit, count);
+			temp /= 10;
 		}
 		
 		if(num == resultNum) {

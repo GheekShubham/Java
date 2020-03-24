@@ -12,12 +12,15 @@ public class Tables {
 		int n = sc.nextInt();
 		System.out.print("Enter extent: ");
 		int m = sc.nextInt();
-		
-		for(int i = 1; i <= n; i++) {
-			for(int j = 1; j <= m; j++) {
-				System.out.print(i*j+" ");
+		if(n < 0 || m < 0) {
+			System.out.println("Invalid input!!!");
+		}else {	
+			for(int i = 1; i <= n; i++) {
+				for(int j = 1; j <= m; j++) {
+					System.out.print(i*j+" ");
+				}
+				System.out.println();
 			}
-			System.out.println();
 		}
 		sc.close();
 	}

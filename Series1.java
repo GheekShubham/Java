@@ -11,13 +11,16 @@ public class Series1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter number of terms: ");
 		int n = sc.nextInt();
+		if(n < 0) {
+			System.out.println("Invalid Input!!!, Only non-negtive input is allowed.");
+		}else {
+			float sum = 0.0f;
 		
-		float sum = 0.0f;
-		
-		for(float i = 1; i <= n; i++) {
-			sum +=(1.0/i);
+			for(float i = 1; i <= n; i++) {
+				sum +=(1.0/i);
+			}
+			System.out.println("Sum of series upto "+n+" terms is "+sum+".");
 		}
-		System.out.println("Sum of series upto "+n+" terms is "+sum+".");
 		sc.close();
 	}
 }

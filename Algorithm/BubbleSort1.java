@@ -11,9 +11,7 @@ public class BubbleSort1 {
 					int temp = array[j];
 					array[j] = array[j+1];
 					array[j+1] = temp;
-				}else {
-					j++;
-				}
+				}else 
 			}
 			count--;
 		}
